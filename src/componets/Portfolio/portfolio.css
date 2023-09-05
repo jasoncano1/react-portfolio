@@ -1,0 +1,84 @@
+.about {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    margin: 5vh auto;
+    opacity: .9;
+    height: 40vh;
+}
+
+.about h2 {
+    margin-left: 50px;
+}
+
+.about img {
+    border-radius: 25%;
+    float: left;
+    margin-right: 20px;
+}
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: transparent;
+}
+
+.card {
+    position: relative;
+    width: 45%;
+    margin: 10px;
+}
+
+.card img {
+    width: 100%;
+    /* height: 100%; */
+    border-radius: 10px 10px 0 0;
+    margin-bottom: -5px;
+}
+
+.card div {
+    background: seagreen;
+    /* position: absolute; */
+    /* bottom: 0px; */
+    color: white;
+    /* padding: 5px 10px; */
+    display: flex;
+    flex-wrap: wrap;
+    opacity: .8;
+    width: 100%;
+    justify-content: center;
+    margin-top: 0;
+    padding-bottom: 10px;
+}
+
+.card div p {
+    width: 48%;
+}
+
+.card * {
+    margin: 10px 0 0 0;
+}
+
+.portfolio .card:first-child {
+    width: 100%;
+    height: 40vh;
+    margin-bottom: 10vh;
+}
+
+.portfolio .card:first-child h2 {
+    width: 100%;
+    text-align: center;
+}
+
+.portfolio .card:first-child h6 {
+    width: 100%;
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 2000px) {
+    .portfolio .card:first-child {
+        height: 80vh;
+    }
+}
