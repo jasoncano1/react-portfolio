@@ -1,12 +1,28 @@
 import './App.css';
-import { Header, About, Portfolio } from './componets';
+import { useState } from 'react';
+import { Header, About, Portfolio, Resume, Contact } from './componets';
 
 
 
-const App = () =>
-  <>
-    <Header />
-    {/* <About /> */}
-    <Portfolio />
-  </>
+const App = () => {
+
+  const [page,setPage] = useState('contact');
+  
+  return (
+
+    <>
+      <Header setpage = {setPage} />
+
+      {
+        page == 'about' ?
+          <About /> : 
+        page == 'portfolio' ?
+          <Portfolio /> :
+        page == 'contact' ?
+          <Contact /> :
+        <Resume />
+      }
+    </>
+  )
+}
 export default App;
