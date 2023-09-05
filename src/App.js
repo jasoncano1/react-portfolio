@@ -6,7 +6,7 @@ import { Header, About, Portfolio, Resume, Contact } from './componets';
 
 const App = () => {
 
-  const [page,setPage] = useState('contact');
+  const [page,setPage] = useState('about');
   
   return (
 
